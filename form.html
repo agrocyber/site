@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="my_css.css">
+    
+</head>
+<body>
+    <div id="menu">
+        <a href="index.html" title="Головна сторінка"> Головна</a> | 
+        <a href="first.html" title="Сторінка зі списком"> Список</a> | 
+        <a href="second.html" title="Сторінка з таблицею"> Таблиця</a> | 
+        <a href="form.html" title="Форми"> Форми</a>
+    </div>
+    <div id="content">
+        <h3>Форма замовлення автомобілей он-лайн</h2>
+        <div class=form>
+            <form method="POST" action="mailto:ya.pepulya@gmail.com?subject=From my site" target="_blank">
+                <div class="main">
+                    <div class="field">
+                        <label for="n">Ім'я</label>
+                        <input type="text" id="n" name="name" title="Краще вводити латинськими літерами" placeholder="Введіть ім'я">
+                    </div>
+                    <div class="field">
+                        <label for="ln">Прізвище</label>
+                        <input type="text" id="ln" name="lastName" title="Краще вводити латинськими літерами" placeholder="Введіть прізвище">
+                    </div>
+                    <div class="field">
+                        <label for="pass">Пароль</label>
+                        <input type="password" id="pass" title="Пароль повинен бути довгим" name="pass"placeholder="Введіть пароль">
+                    </div>
+                    <div class="field">
+                        <label for="a">Адреса</label>
+                        <input type="text" id="a" name="address"  placeholder="Введіть адресу">
+                    </div>
+                    
+                    <div class="send">
+                        <label for="radiogroup">Відправити</label><br>
+                        <input type="radio" name="radiogroup" value="Ukrposhta">Укрпошта
+                        <input type="radio"  name="radiogroup" value="novaposhta">Нова пошта<br>
+                        <input type="radio" name="radiogroup" value="mist">MeestExpress
+                    </div>
+                    <div class="send">
+                        <label >Отримати</label><br>
+                        <input type="checkbox" name="bill">Рахунок
+                        <input type="checkbox" name="invoice">Накладна
+                        
+                    </div>
+                    <div class="send">
+                        <label>Оберіть виробника</label>
+                        <select name="firms" title="Оберіть щось">
+                            <option disabled>Оберіть виробника</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Renault">Renault</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Fiat">Fiat</option>
+                        </select><br>
+                        <label>Оберіть тип кузова</label>
+                        <select name="body" title="Оберіть щось">
+                            <option disabled>Оберіть тип кузова</option>
+                            <option value="hatchback">Хетчбек</option>
+                            <option value="crossover">Кросовер</option>
+                            <option value="sedan">Седан</option>
+                            <option value="minivan">Мінівен</option>
+                            <option value="coupe">Купе</option>
+
+                        </select>
+                     </div>
+                     <div class="field">
+                        <label for="num">Кількість</label>
+                        <input type="number" id="num" name="number" placeholder="Введіть кількість">
+                    </div>
+                     <div class="field"></div>
+                        <label for="text" >Додаткова інформація</label><br>
+                        <textarea title="Напишіть щось" name="text" cols="40" rows="6"></textarea>
+                    </div>
+                    
+                    <input type=reset value="Очисти поля форми">
+                    <input type="submit" value="Відправити">
+                </div>
+            </form>
+        </div>
+
+</div>
+<div id="footer">Розроблено під час карантину - 2020</div>
+</body>
+</html>
